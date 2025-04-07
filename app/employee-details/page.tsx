@@ -42,6 +42,8 @@ export interface Employee {
   session: {
     sessionsLastMonth: number,
     lastSessionDateTime: string,
+    sessionDays: string[],
+    sessionSummary: string,
     monthwiseSessions: object[],
   }
 }
@@ -91,6 +93,8 @@ const EmployeeDetails = () => {
     session: {
       sessionsLastMonth: 3,
       lastSessionDateTime: "03/04/2024 5.00 pm",
+      sessionDays: [],
+      sessionSummary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quisquam in pariatur repudiandae, ab possimus distinctio rerum atque accusamus voluptatem neque, sit, voluptates rem nostrum similique ipsam. Recusandae, nam ipsam.",
       monthwiseSessions: [],
     }
   };
